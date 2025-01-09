@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="js/main.js" defer></script>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <Link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>CIMEMO</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/logo.svg" alt="Website Logo" class="nav__logo-img" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Beranda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="belanja.html" class="nav__link">Belanja</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kursus.html" class="nav__link">Kursus</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="akun.html" class="nav__link">Akun</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="masuk.html" class="nav__link">Masuk</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input" />
+                    <button class="search__btn">
+                        <img src="img/search.svg" alt="Search Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/heart.svg" alt="Wishlist Icon" />
+                </a>
+
+                <a href="keranjang.html" class="header__action-btn">
+                    <img src="img/cart.svg" alt="Cart Icon" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+
+    <main class="main">
+
+        <!--=============== BREADCRUMB ===============-->
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Beranda</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><a href="belanja.html" class="breadcrumb__link">Belanja</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Keranjang</span></li>
+            </ul>
+        </section>
+
+        <!--=============== CART ===============-->
+        <section class="cart section--lg container">
+            <div class="table__container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Gambar</th>
+                            <th class="text-center">Nama Produk</th>
+                            <th class="text-center">Harga</th>
+                            <th class="text-center">Jumlah</th>
+                            <th class="text-center">Subtotal</th>
+                            <th class="text-center">Hapus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Product 1 -->
+                        <tr>
+                            <td class="text-center">
+                                <img src="img/produk-unggulan/product-1.jpg" alt="" class="table__img" />
+                            </td>
+                            <td class="text-center product-info">
+                                <h3 class="table__title">Sepatu Wanita Tutup Ecoprint</h3>
+                                <p class="table__description">Sepatu boots ecoprint ini menampilkan desain modern dengan
+                                    sentuhan motif daun alami yang elegan.</p>
+                            </td>
+                            <td class="text-center">Rp 553.000</td>
+                            <td class="text-center">
+                                <div class="quantity__wrapper">
+                                    <button class="quantity__button minus">
+                                        <img src="img/down.svg" alt="Kurang" class="quantity__icon">
+                                    </button>
+                                    <input type="number" class="quantity__input" value="1" min="1" max="5" readonly>
+                                    <button class="quantity__button plus">
+                                        <img src="img/up.svg" alt="Tambah" class="quantity__icon">
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="text-center">Rp 553.000</td>
+                            <td class="text-center">
+                                <button class="table__delete">
+                                    <img src="img/trash.svg" alt="Hapus" />
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Product 2 -->
+                        <tr>
+                            <td class="text-center">
+                                <img src="img/produk-unggulan/product-3.jpg" alt="" class="table__img" />
+                            </td>
+                            <td class="text-center product-info">
+                                <h3 class="table__title">Dress Elceana Rustic</h3>
+                                <p class="table__description">Dress Elceana Rustic menghadirkan gaya modern yang natural
+                                    dengan sentuhan ecoprint yang elegan.</p>
+                            </td>
+                            <td class="text-center">Rp 650.000</td>
+                            <td class="text-center">
+                                <div class="quantity__wrapper">
+                                    <button class="quantity__button minus">
+                                        <img src="img/down.svg" alt="Kurang" class="quantity__icon">
+                                    </button>
+                                    <input type="number" class="quantity__input" value="1" min="1" max="5" readonly>
+                                    <button class="quantity__button plus">
+                                        <img src="img/up.svg" alt="Tambah" class="quantity__icon">
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="text-center">Rp 650.000</td>
+                            <td class="text-center">
+                                <button class="table__delete">
+                                    <img src="img/trash.svg" alt="Hapus" />
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Product 3 -->
+                        <tr>
+                            <td class="text-center">
+                                <img src="img/produk-unggulan/product-4.jpg" alt="" class="table__img" />
+                            </td>
+                            <td class="text-center product-info">
+                                <h3 class="table__title">Yellow Bag Rustic</h3>
+                                <p class="table__description">Tas Yellow Bag Rustic ini mengusung konsep ecoprint dengan
+                                    gaya modern yang alami dan ecoufriendly yang elegan.</p>
+                            </td>
+                            <td class="text-center">Rp 1.500.000</td>
+                            <td class="text-center">
+                                <div class="quantity__wrapper">
+                                    <button class="quantity__button minus">
+                                        <img src="img/down.svg" alt="Kurang" class="quantity__icon">
+                                    </button>
+                                    <input type="number" class="quantity__input" value="1" min="1" max="5" readonly>
+                                    <button class="quantity__button plus">
+                                        <img src="img/up.svg" alt="Tambah" class="quantity__icon">
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="text-center">Rp 1.500.000</td>
+                            <td class="text-center">
+                                <button class="table__delete">
+                                    <img src="img/trash.svg" alt="Hapus" />
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Product 4 -->
+                        <tr>
+                            <td class="text-center">
+                                <img src="img/produk-unggulan/product-6.jpg" alt="" class="table__img" />
+                            </td>
+                            <td class="text-center product-info">
+                                <h3 class="table__title">Alat Pounding</h3>
+                                <p class="table__description">Alat Pounding ini dirancang khusus untuk mendukung proses
+                                    pembuatan ecoprint.</p>
+                            </td>
+                            <td class="text-center">Rp 180.000</td>
+                            <td class="text-center">
+                                <div class="quantity__wrapper">
+                                    <button class="quantity__button minus">
+                                        <img src="img/down.svg" alt="Kurang" class="quantity__icon">
+                                    </button>
+                                    <input type="number" class="quantity__input" value="1" min="1" max="5" readonly>
+                                    <button class="quantity__button plus">
+                                        <img src="img/up.svg" alt="Tambah" class="quantity__icon">
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="text-center">Rp 180.000</td>
+                            <td class="text-center">
+                                <button class="table__delete">
+                                    <img src="img/trash.svg" alt="Hapus" />
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="cart__bottom">
+                <div class="cart__actions">
+                    <button class="btn cart__perbarui">
+                        <img src="img/perbarui.svg" alt="Perbarui" />
+                        Perbarui Keranjang
+                    </button>
+                    <button class="btn cart__continue">
+                        <img src="img/bag.svg" alt="Lanjut Belanja" />
+                        Lanjutkan Berbelanja
+                    </button>
+                </div>
+
+                <div class="cart__total">
+                    <div class="total__content">
+                        <h3 class="total__title">Total Keranjang</h3>
+                        <table class="total__table">
+                            <tr>
+                                <td class="total__text">Total</td>
+                                <td class="total__value">Rp 2.883.000</td>
+                            </tr>
+                        </table>
+                        <button class="btn checkout__btn">
+                            <img src="img/wallet.svg" alt="Checkout" />
+                            Check Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Logo & Details -->
+            <div class="footer__logo">
+                <img src="img/logo-white.png" alt="Logo Footer" class="footer__logo-img">
+                <div class="footer__details">
+                    <span class="footer__details-text">Cimemo.id</span>
+                    <span class="footer__details-text">Alamat: Bantarsoka, Kec. Purwokerto Utara, Kabupaten Banyumas,
+                        Jawa Tengah 53123</span>
+                    <span class="footer__details-text">No.HP : +62 888-0663-3719</span>
+                    <span class="footer__details-text">Jam: 08.00 - 16.00</span>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer__info">
+                <h3 class="footer__title">Informasi</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Beranda</a></li>
+                    <li><a href="#" class="footer__link">Belanja</a></li>
+                    <li><a href="#" class="footer__link">Kursus</a></li>
+                    <li><a href="#" class="footer__link">Cara Pembelian</a></li>
+                </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="footer__account">
+                <h3 class="footer__title">Akun</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Masuk/Daftar</a></li>
+                    <li><a href="#" class="footer__link">Keranjang</a></li>
+                    <li><a href="#" class="footer__link">Favorit</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer__social">
+                <h3 class="footer__title">Ikuti Kami</h3>
+                <div class="footer__social-list">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/facebook.svg" alt="Facebook" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/whatsapp.svg" alt="WhatsApp" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tiktok.svg" alt="TikTok" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/shopee.svg" alt="Shopee" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom container">
+            <span class="footer__copy">Copyright © 2024 Cimemo.id. All Rights Reserved</span>
+            <a href="#" class="footer__designer">Design by Sukhaenah Tri Utami</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

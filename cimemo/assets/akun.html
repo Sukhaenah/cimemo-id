@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>CIMEMO.ID - Akun</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/logo.svg" alt="Website Logo" class="nav__logo-img" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Beranda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="belanja.html" class="nav__link">Belanja</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kursus.html" class="nav__link">Kursus</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="akun.html" class="nav__link active-link">Akun</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="masuk.html" class="nav__link">Masuk</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input" />
+                    <button class="search__btn">
+                        <img src="img/search.svg" alt="Search Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/heart.svg" alt="Wishlist Icon" />
+                </a>
+                <a href="keranjang.html" class="header__action-btn">
+                    <img src="img/cart.svg" alt="Cart Icon" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Beranda</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Akun</span></li>
+            </ul>
+        </section>
+
+        <section class="accounts section--lg">
+            <div class="accounts__container container grid">
+                <div class="account__tabs">
+                    <button class="account__tab active-tab" data-tab="#dashboard">
+                        <img src="img/dashboard.svg" alt="Dashboard" class="tab__icon"> Dashboard
+                    </button>
+                
+                    <button class="account__tab" data-tab="#pesanan">
+                        <img src="img/bag.svg" alt="Pesanan" class="tab__icon"> Pesanan
+                    </button>
+                
+                    <button class="account__tab" data-tab="#profil">
+                        <img src="img/profil.svg" alt="Profil" class="tab__icon"> Perbarui Profil
+                    </button>
+                
+                    <button class="account__tab" data-tab="#alamat">
+                        <img src="img/alamat.svg" alt="Alamat" class="tab__icon"> Alamat Saya
+                    </button>
+                
+                    <button class="account__tab" data-tab="#password">
+                        <img src="img/ubah.svg" alt="Password" class="tab__icon"> Ubah Password
+                    </button>
+                
+                    <button class="account__tab" data-tab="#keluar">
+                        <img src="img/logout.svg" alt="Keluar" class="tab__icon"> Keluar
+                    </button>
+                </div>
+
+                <div class="account__content">
+                    <div class="tab__items">
+                        <!-- Dashboard -->
+                        <div class="tab__item active-tab" id="dashboard">
+                            <div class="dashboard__welcome">
+                                <h3>Hello Tami!</h3>
+                                <p>Dari dashboard akun Anda, Anda dapat dengan mudah memeriksa & melihat pesanan terbaru,
+                                    mengelola alamat pengiriman dan pengajuan, serta mengubah kata sandi dan detail akun Anda.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pesanan -->
+                        <div class="tab__item" id="pesanan">
+                            <div class="pesanan__list">
+                                <h3>Pesananmu</h3>
+                                <div class="order__table-container">
+                                    <table class="order__table">
+                                        <thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Tanggal</th>
+                                                <th>Status</th>
+                                                <th>Total</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#1234</td>
+                                                <td>Desember 24, 2024</td>
+                                                <td><span class="status process">Process</span></td>
+                                                <td>Rp 1.200.000</td>
+                                                <td><button class="btn-lihat">Lihat</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1233</td>
+                                                <td>September 22, 2024</td>
+                                                <td><span class="status selesai">Selesai</span></td>
+                                                <td>Rp 670.000</td>
+                                                <td><button class="btn-lihat">Lihat</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profil -->
+                        <div class="tab__item" id="profil">
+                            <div class="profile__form">
+                                <h3>Perbarui Profil</h3>
+                                <form class="form">
+                                    <div class="form__group">
+                                        <input type="text" placeholder="Nama Pengguna" class="form__input">
+                                    </div>
+                                    <button type="submit" class="btn">Simpan</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Alamat -->
+                        <div class="tab__item" id="alamat">
+                            <div class="address__details">
+                                <h3>Alamat</h3>
+                                <div class="address__content">
+                                    <p>Jl. Melati No. 25, RT 03 RW 05</p>
+                                    <p>Kelurahan Sukamaju, Kecamatan Sukabumi</p>
+                                    <p>Kota Bandung, Jawa Barat 40123</p>
+                                    <p>0812-3456-7890</p>
+                                    <button class="btn-ubah">Ubah</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="tab__item" id="password">
+                            <div class="password__form">
+                                <h3>Ubah Password</h3>
+                                <form class="form">
+                                    <div class="form__group">
+                                        <input type="password" placeholder="Password Lama" class="form__input">
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="password" placeholder="Password Baru" class="form__input">
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="password" placeholder="Konfirmasi Password" class="form__input">
+                                    </div>
+                                    <button type="submit" class="btn">Simpan</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Logo & Details -->
+            <div class="footer__logo">
+                <img src="img/logo-white.png" alt="Logo Footer" class="footer__logo-img">
+                <div class="footer__details">
+                    <span class="footer__details-text">Cimemo.id</span>
+                    <span class="footer__details-text">Alamat: Bantarsoka, Kec. Purwokerto Utara, Kabupaten Banyumas,
+                        Jawa Tengah 53123</span>
+                    <span class="footer__details-text">No.HP : +62 888-0663-3719</span>
+                    <span class="footer__details-text">Jam: 08.00 - 16.00</span>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer__info">
+                <h3 class="footer__title">Informasi</h3>
+                <ul class="footer__list">
+                    <li><a href="index.html" class="footer__link">Beranda</a></li>
+                    <li><a href="belanja.html" class="footer__link">Belanja</a></li>
+                    <li><a href="kursus.html" class="footer__link">Kursus</a></li>
+                </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="footer__account">
+                <h3 class="footer__title">Akun</h3>
+                <ul class="footer__list">
+                    <li><a href="masuk.html" class="footer__link">Masuk/Daftar</a></li>
+                    <li><a href="keranjang.html" class="footer__link">Keranjang</a></li>
+                    <li><a href="wishlist.html" class="footer__link">Favorit</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer__social">
+                <h3 class="footer__title">Ikuti Kami</h3>
+                <div class="footer__social-list">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/facebook.svg" alt="Facebook" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/whatsapp.svg" alt="WhatsApp" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tiktok.svg" alt="TikTok" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/shopee.svg" alt="Shopee" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom container">
+            <span class="footer__copy">Copyright © 2024 Cimemo.id. All Rights Reserved</span>
+            <a href="#" class="footer__designer">Design by Sukhaenah Tri Utami</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.account__tab');
+            const tabItems = document.querySelectorAll('.tab__item');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = tab.getAttribute('data-tab');
+                    
+                    // Handle logout tab
+                    if (targetId === '#keluar') {
+                        if (confirm('Apakah Anda yakin ingin keluar?')) {
+                            window.location.href = 'index.html';
+                        }
+                        return;
+                    }
+
+                    const target = document.querySelector(targetId);
+
+                    if (target) {
+                        // Remove active class from all tabs and items
+                        tabs.forEach(t => t.classList.remove('active-tab'));
+                        tabItems.forEach(item => item.classList.remove('active-tab'));
+
+                        // Add active class to clicked tab and its content
+                        tab.classList.add('active-tab');
+                        target.classList.add('active-tab');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

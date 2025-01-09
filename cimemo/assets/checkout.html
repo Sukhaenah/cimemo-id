@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="js/main.js" defer></script>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <Link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>CIMEMO</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/logo.svg" alt="Website Logo" class="nav__logo-img" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Beranda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="belanja.html" class="nav__link">Belanja</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kursus.html" class="nav__link">Kursus</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="akun.html" class="nav__link">Akun</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="masuk.html" class="nav__link">Masuk</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input" />
+                    <button class="search__btn">
+                        <img src="img/search.svg" alt="Search Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/heart.svg" alt="Wishlist Icon" />
+                </a>
+
+                <a href="keranjang.html" class="header__action-btn">
+                    <img src="img/cart.svg" alt="Cart Icon" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+
+    <main class="main">
+
+        <!--=============== BREADCRUMB ===============-->
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Beranda</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><a href="belanja.html" class="breadcrumb__link">Belanja</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><a href="keranjang.html" class="breadcrumb__link">Keranjang</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Checkout</span></li>
+            </ul>
+        </section>
+
+        <!--=============== CHECKOUT ===============-->
+        <section class="checkout section--lg container">
+            <div class="checkout__container">
+                <!-- Form Pengiriman -->
+                <div class="checkout__form">
+                    <div class="shipping__details">
+                        <h3 class="checkout__title">Perhitungan Pengiriman</h3>
+                        <form id="shippingForm" class="form">
+                            <input type="text" placeholder="Nama" class="form__input" required>
+                            <input type="text" placeholder="Alamat" class="form__input" required>
+                            <input type="text" placeholder="Kota" class="form__input" required>
+                            <input type="text" placeholder="Negara" class="form__input" required>
+                            <input type="text" placeholder="Kode Pos" class="form__input" required>
+                            <input type="tel" placeholder="No. Telepon" class="form__input" required>
+                            <input type="email" placeholder="Email" class="form__input" required>
+                        </form>
+                    </div>
+
+                    <div class="additional__info">
+                        <h3 class="checkout__title">Informasi Tambahan</h3>
+                        <textarea class="form__input textarea" placeholder="Catatan Pesanan" rows="4"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order__summary">
+                    <div class="summary__card">
+                        <h3 class="checkout__title">Total Keranjang</h3>
+
+                        <table class="summary__table">
+                            <thead>
+                                <tr>
+                                    <th>Nama Produk</th>
+                                    <th>Harga</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product__details">
+                                            <img src="img/produk-unggulan/product-3.jpg" alt="Dress Elecana Rustic"
+                                                class="product__image">
+                                            <div class="product__info">
+                                                <h4>Dress Elecana Rustic</h4>
+                                                <p>Dress Elecana Rustic menghadirkan gaya modern yang natural dengan
+                                                    sentuhan elegan.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Rp 650.000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product__details">
+                                            <img src="img/produk-unggulan/product-4.jpg" alt="Yellow Bag Rustic"
+                                                class="product__image">
+                                            <div class="product__info">
+                                                <h4>Yellow Bag Rustic</h4>
+                                                <p>Tas Yellow Bag dengan gaya modern yang alami dan sentuhan rustic yang
+                                                    elegan.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Rp 1.500.000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product__details">
+                                            <img src="img/produk-unggulan/product-6.jpg" alt="Alat Pounding"
+                                                class="product__image">
+                                            <div class="product__info">
+                                                <h4>Alat Pounding</h4>
+                                                <p>Alat Pounding ini dirancang khusus untuk mendukung proses pembuatan
+                                                    emping.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Rp 180.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="summary__info">
+                            <div class="summary__row">
+                                <span>Subtotal</span>
+                                <span>Rp 2.330.000</span>
+                            </div>
+                            <div class="summary__row">
+                                <span>Pengiriman</span>
+                                <span>Gratis Pengiriman</span>
+                            </div>
+                            <div class="total__row">
+                                <span class="total__text">Total</span>
+                                <span class="total__price">Rp 2.330.000</span>
+                            </div>
+                        </div>
+
+                        <div class="payment__method">
+                            <h3 class="checkout__title">Pembayaran</h3>
+                            <div class="payment__options">
+                                <label class="payment__option">
+                                    <input type="radio" name="payment" value="transfer" required>
+                                    <span>Transfer bank langsung</span>
+                                </label>
+                                <label class="payment__option">
+                                    <input type="radio" name="payment" value="paypal">
+                                    <span>Paypal</span>
+                                </label>
+                                <label class="payment__option">
+                                    <input type="radio" name="payment" value="cod">
+                                    <span>Bayar Ditempat</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn checkout__btn" id="orderBtn" disabled>
+                            Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Logo & Details -->
+            <div class="footer__logo">
+                <img src="img/logo-white.png" alt="Logo Footer" class="footer__logo-img">
+                <div class="footer__details">
+                    <span class="footer__details-text">Cimemo.id</span>
+                    <span class="footer__details-text">Alamat: Bantarsoka, Kec. Purwokerto Utara, Kabupaten Banyumas,
+                        Jawa Tengah 53123</span>
+                    <span class="footer__details-text">No.HP : +62 888-0663-3719</span>
+                    <span class="footer__details-text">Jam: 08.00 - 16.00</span>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer__info">
+                <h3 class="footer__title">Informasi</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Beranda</a></li>
+                    <li><a href="#" class="footer__link">Belanja</a></li>
+                    <li><a href="#" class="footer__link">Kursus</a></li>
+                    <li><a href="#" class="footer__link">Cara Pembelian</a></li>
+                </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="footer__account">
+                <h3 class="footer__title">Akun</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Masuk/Daftar</a></li>
+                    <li><a href="#" class="footer__link">Keranjang</a></li>
+                    <li><a href="#" class="footer__link">Favorit</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer__social">
+                <h3 class="footer__title">Ikuti Kami</h3>
+                <div class="footer__social-list">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/facebook.svg" alt="Facebook" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/whatsapp.svg" alt="WhatsApp" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tiktok.svg" alt="TikTok" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/shopee.svg" alt="Shopee" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom container">
+            <span class="footer__copy">Copyright © 2024 Cimemo.id. All Rights Reserved</span>
+            <a href="#" class="footer__designer">Design by Sukhaenah Tri Utami</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

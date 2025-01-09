@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="js/main.js" defer></script>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <Link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>CIMEMO</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/logo.svg" alt="Website Logo" class="nav__logo-img" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Beranda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="belanja.html" class="nav__link active-link">Belanja</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kursus.html" class="nav__link">Kursus</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="akun.html" class="nav__link">Akun</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="masuk.html" class="nav__link">Masuk</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input" />
+                    <button class="search__btn">
+                        <img src="img/search.svg" alt="Search Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/heart.svg" alt="Wishlist Icon" />
+                </a>
+
+                <a href="cart.html" class="header__action-btn">
+                    <img src="img/cart.svg" alt="Cart Icon" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+
+    <main class="main">
+
+        <!--=============== BREADCRUMB ===============-->
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Beranda</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><a href="belanja.html" class="breadcrumb__link">Belanja</a></li>
+            </ul>
+        </section>
+
+        <!-- =============== CATEGORIES =============== -->
+        <section id="categories" class="container section">
+            <h3 class="section__title">Categories</h3>
+        
+            <div class="categories__container">
+                <div class="category__item">
+                    <a href="pakaian.html">
+                        <img src="img/category-1.png" alt="Pakaian" class="category__img">
+                        <h3 class="category__title">Pakaian</h3>
+                    </a>
+                </div>                                
+                <div class="category__item">
+                    <a href="tas.html">
+                        <img src="img/category-2.png" alt="Tas" class="category__img">
+                        <h3 class="category__title">Tas</h3>
+                    </a>
+                </div>
+                <div class="category__item active">
+                    <a href="sepatu.html">
+                        <img src="img/category-3.png" alt="Sepatu" class="category__img">
+                        <h3 class="category__title">Sepatu</h3>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="lainnya.html">
+                        <img src="img/category-4.png" alt="Sepatu" class="category__img">
+                        <h3 class="category__title">Lainnya</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--=============== PRODUCTS ===============-->
+
+        <section class="products section--lg container">
+            <p class="total__products">We found <span>28</span> items for you!</p>
+
+            <div class="products__container grid">
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-unggulan/product-1.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-unggulan/product-1.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+
+                        <div class="product__badge populer">Populer</div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Sepatu Tutup Wanita</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 553.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-unggulan/product-5.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-unggulan/product-5.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+
+                        <div class="product__badge populer">Populer</div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Sepatu Tutup Modern</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 553.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-terbaru/produk-6.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-terbaru/produk-6.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Selop Kulit Domba</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 455.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-terbaru/produk-7.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-terbaru/produk-7.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+
+                        <div class="product__badge populer">Populer</div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Sepatu Motif Bunga</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 553.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-belanja/produk-7.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-belanja/produk-7.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Boots V.1</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 520.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-belanja/produk-9.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-belanja/produk-9.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Boots V.1</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 520.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Logo & Details -->
+            <div class="footer__logo">
+                <img src="img/logo-white.png" alt="Logo Footer" class="footer__logo-img">
+                <div class="footer__details">
+                    <span class="footer__details-text">Cimemo.id</span>
+                    <span class="footer__details-text">Alamat: Bantarsoka, Kec. Purwokerto Utara, Kabupaten Banyumas,
+                        Jawa Tengah 53123</span>
+                    <span class="footer__details-text">No.HP : +62 888-0663-3719</span>
+                    <span class="footer__details-text">Jam: 08.00 - 16.00</span>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer__info">
+                <h3 class="footer__title">Informasi</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Beranda</a></li>
+                    <li><a href="#" class="footer__link">Belanja</a></li>
+                    <li><a href="#" class="footer__link">Kursus</a></li>
+                    <li><a href="#" class="footer__link">Cara Pembelian</a></li>
+                </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="footer__account">
+                <h3 class="footer__title">Akun</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Masuk/Daftar</a></li>
+                    <li><a href="#" class="footer__link">Keranjang</a></li>
+                    <li><a href="#" class="footer__link">Favorit</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer__social">
+                <h3 class="footer__title">Ikuti Kami</h3>
+                <div class="footer__social-list">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/facebook.svg" alt="Facebook" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/whatsapp.svg" alt="WhatsApp" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tiktok.svg" alt="TikTok" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/shopee.svg" alt="Shopee" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom container">
+            <span class="footer__copy">Copyright © 2024 Cimemo.id. All Rights Reserved</span>
+            <a href="#" class="footer__designer">Design by Sukhaenah Tri Utami</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

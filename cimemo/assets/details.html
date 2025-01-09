@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="js/main.js" defer></script>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <Link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>CIMEMO</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/logo.svg" alt="Website Logo" class="nav__logo-img" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Beranda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="belanja.html" class="nav__link active-link">Belanja</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kursus.html" class="nav__link">Kursus</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="akun.html" class="nav__link">Akun</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="masuk.html" class="nav__link">Masuk</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input" />
+                    <button class="search__btn">
+                        <img src="img/search.svg" alt="Search Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/heart.svg" alt="Wishlist Icon" />
+                </a>
+
+                <a href="cart.html" class="header__action-btn">
+                    <img src="img/cart.svg" alt="Cart Icon" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+
+    <main class="main">
+
+        <!--=============== BREADCRUMB ===============-->
+
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Beranda</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><a href="belanja.html" class="breadcrumb__link">Belanja</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Produk</span></li>
+            </ul>
+        </section>
+
+        <!--=============== DETAILS ===============-->
+        <section class="details section--lg">
+            <div class="details__container container grid">
+                <div class="details__group">
+                    <img src="img/produk-unggulan/product-1.jpg" alt="Sepatu Tutup Wanita Ecoprint" class="details__img" />
+                </div>
+                <div class="details__group">
+                    <h3 class="details__title">Sepatu Tutup Wanita Ecoprint</h3>
+                    <p class="details__category">Kategori: <span>Sepatu</span></p>
+        
+                    <div class="details__price">
+                        <span class="new__price">Rp 553.000</span>
+                    </div>
+        
+                    <p class="details__description">
+                        Sepatu boots ecoprint ini menampilkan desain modern dengan sentuhan motif daun alami yang elegan. Dibuat secara handmade dengan teknik ecoprint, setiap pasang memiliki pola unik, yang membuat pemalainya tampil berbeda. Dengan hak pendek yang nyaman, sepatu ini memberikan kenyamanan sekaligus menonjolkan kesan etnik pada penampilan Anda.
+                    </p>
+        
+                    <div class="details__meta">
+                        <div class="details__available">
+                            <img src="img/wallet.svg" alt="Bayar di Tempat" class="details__icon">
+                            <span>Tersedia untuk bayar ditempat</span>
+                        </div>
+                    </div>
+        
+                    <div class="details__size">
+                        <h4 class="details__subtitle">Ukuran</h4>
+                        <div class="size__buttons">
+                            <button class="size__button" data-size="37">37</button>
+                            <button class="size__button" data-size="38">38</button>
+                            <button class="size__button" data-size="39">39</button>
+                            <button class="size__button" data-size="40">40</button>
+                        </div>
+                    </div>
+        
+                    <div class="details__quantity">
+                        <div class="quantity__wrapper">
+                            <button class="quantity__button minus">
+                                <img src="img/down.svg" alt="Kurang" class="quantity__icon">
+                            </button>
+                            <input type="number" class="quantity__input" value="1" min="1" max="5" readonly>
+                            <button class="quantity__button plus">
+                                <img src="img/up.svg" alt="Tambah" class="quantity__icon">
+                            </button>
+                        </div>
+                    </div>
+        
+                    <div class="details__actions">
+                        <button class="btn details__add-cart">
+                            Tambah ke keranjang
+                        </button>
+                        <button class="details__like">
+                            <img src="img/heart.svg" alt="Favorit" class="like__icon">
+                        </button>
+                    </div>
+        
+                    <div class="details__tags">
+                        <span class="details__tag">Tag:</span>
+                        <a href="#" class="tag__link">Sepatu,</a>
+                        <a href="#" class="tag__link">Kulit,</a>
+                        <a href="#" class="tag__link">Hak</a>
+                    </div>
+        
+                    <div class="details__stock">
+                        <span class="stock__text">Tersedia: 5 barang</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== DETAILS TAB ===============-->
+        <section class="details__tab container">
+            <div class="detail__tabs">
+                <span class="detail__tab active-tab" data-target="#info">
+                    Detail Produk
+                </span>
+                <span class="detail__tab" data-target="#reviews">Ulasan(2)</span>
+            </div>
+            <div class="details_tabs-content">
+                <div class="details__tab-content active-tab" id="info">
+                    <table class="info__table">
+                        <tr>
+                            <th>Harga</th>
+                            <td>Rp 553.000</td>
+                        </tr>
+
+                        <tr>
+                            <th>Ukuran</th>
+                            <td>37, 38, 39, 40</td>
+                        </tr>
+
+                        <tr>
+                            <th>Motif</th>
+                            <td>Detail Daun alami (setiap produk memiliki pola berbeda)text</td>
+                        </tr>
+
+                        <tr>
+                            <th>Hak</th>
+                            <td>Pendek (± 5 cm)</td>
+                        </tr>
+
+                        <tr>
+                            <th>Bahan</th>
+                            <td>Kulit sintetis berkualitas</td>
+                        </tr>
+
+                        <tr>
+                            <th>Warna Dasar</th>
+                            <td>Cream dengan motif natural</td>
+                        </tr>
+
+                        <tr>
+                            <th>Stok Tersedia</th>
+                            <td>5 barang</td>
+                        </tr>
+
+                        <tr>
+                            <th>Pengerjaan</th>
+                            <td>3-5 hari kerja</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div class="details__tab-content" id="reviews">
+                    <div class="reviews__container grid">
+                        <div class="review__single">
+                            <div>
+                                <img src="img/avatar-1.jpg" alt="" class="review__img">
+                                <h4 class="review__title">Sarah</h4>
+                            </div>
+                            <div class="review__data">
+                                <div class="review__rating">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                </div>
+
+                                <p class="review__description">
+                                    Sepatu sangat nyaman dipakai, motifnya unik dan cantik. Pengerjaan rapi dan sesuai
+                                    dengan foto. Ukurannya pas dan cocok untuk daily wear.
+                                </p>
+
+                                <span class="review__date">Maret 15, 2024, 20.58</span>
+                            </div>
+                        </div>
+
+                        <div class="review__single">
+                            <div>
+                                <img src="img/avatar-2.jpg" alt="" class="review__img">
+                                <h4 class="review__title">Anita</h4>
+                            </div>
+                            <div class="review__data">
+                                <div class="review__rating">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                    <img src="img/star.svg" alt="Star">
+                                </div>
+
+                                <p class="review__description">
+                                    Kualitas sepatu bagus dan desainnya cantik. Pengiriman cepat dan aman. Hanya saja
+                                    ukurannya agak longgar untuk kaki saya, mungkin bisa pesan 1 nomor lebih kecil.
+                                </p>
+
+                                <span class="review__date">10 Maret 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__form">
+                        <h4 class="review__form-title">Tambah Ulasan</h4>
+
+                        <div class="rate__product">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+
+                        <form action="" class="form grid">
+                            <textarea class="form__input textarea" placeholder="Write Comment"></textarea>
+                            <div class="form__group grid">
+                                <input type="text" placeholder="Name" class="form__input" />
+                                <input type="email" placeholder="Email" class="form__input" />
+                            </div>
+                            <div class="form__btn">
+                                <button class="btn">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== PRODUK TERKAIT ===============-->
+        <section class="products section--lg container">
+            <h2 class="sectionterkait__title">Produk <span>Terkait</span></h2>
+
+            <div class="products__container grid">
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-unggulan/product-1.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-unggulan/product-1.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+
+                        <div class="product__badge populer">Populer</div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Sepatu Tutup Wanita</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 553.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-unggulan/product-5.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-unggulan/product-5.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+
+                        <div class="product__badge populer">Populer</div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Sepatu Tutup Modern</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 553.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-terbaru/produk-6.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-terbaru/produk-6.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Selop Kulit Domba</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 455.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product__item">
+                    <div class="product__banner">
+                        <a href="details.html" class="product__images">
+                            <img src="img/produk-terbaru/produk-7.jpg" alt="" class="product__img default" />
+
+                            <img src="img/produk-terbaru/produk-7.jpg" alt="" class="product__img hover" />
+                        </a>
+
+                        <div class="product__actions">
+                            <a href="#" class="action__btn" aria-label="Lihat">
+                                <img src="img/eye.svg" alt="View">
+                            </a>
+
+                            <a href="#" class="action__btn" aria-label="Suka">
+                                <img src="img/heart.svg" alt="Wishlist">
+                            </a>
+                        </div>
+
+                        <div class="product__badge populer">Populer</div>
+                    </div>
+
+                    <div class="product__content">
+                        <span class="product__category">Sepatu</span>
+                        <a href="details.html">
+                            <h3 class="product__title">Sepatu Motif Bunga</h3>
+                        </a>
+                        <div class="product__rating">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                            <img src="img/star.svg" alt="Star">
+                        </div>
+                        <div class="product_price flex">
+                            <span class="new__price">Rp 553.000</span>
+                        </div>
+
+                        <a href="#" class="action__btn cart__btn" aria-label="Keranjang">
+                            <img src="img/bag.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Logo & Details -->
+            <div class="footer__logo">
+                <img src="img/logo-white.png" alt="Logo Footer" class="footer__logo-img">
+                <div class="footer__details">
+                    <span class="footer__details-text">Cimemo.id</span>
+                    <span class="footer__details-text">Alamat: Bantarsoka, Kec. Purwokerto Utara, Kabupaten Banyumas,
+                        Jawa Tengah 53123</span>
+                    <span class="footer__details-text">No.HP : +62 888-0663-3719</span>
+                    <span class="footer__details-text">Jam: 08.00 - 16.00</span>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer__info">
+                <h3 class="footer__title">Informasi</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Beranda</a></li>
+                    <li><a href="#" class="footer__link">Belanja</a></li>
+                    <li><a href="#" class="footer__link">Kursus</a></li>
+                    <li><a href="#" class="footer__link">Cara Pembelian</a></li>
+                </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="footer__account">
+                <h3 class="footer__title">Akun</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Masuk/Daftar</a></li>
+                    <li><a href="#" class="footer__link">Keranjang</a></li>
+                    <li><a href="#" class="footer__link">Favorit</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer__social">
+                <h3 class="footer__title">Ikuti Kami</h3>
+                <div class="footer__social-list">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/facebook.svg" alt="Facebook" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/whatsapp.svg" alt="WhatsApp" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tiktok.svg" alt="TikTok" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/shopee.svg" alt="Shopee" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom container">
+            <span class="footer__copy">Copyright © 2024 Cimemo.id. All Rights Reserved</span>
+            <a href="#" class="footer__designer">Design by Sukhaenah Tri Utami</a>
+        </div>
+    </footer>
+
+    <!--================ SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
